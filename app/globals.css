@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +30,48 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+} */
+
+.custom-bg {
+  background: linear-gradient(to right, #ffffff, #82aae6);
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-bg::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  right: -20%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+  z-index: 1;
+}
+
+.custom-bg::after {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  left: -20%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+  z-index: 1;
+}
+
+.half-gradient {
+  background: linear-gradient(
+    to right,
+    rgba(43, 218, 134, 0.2),
+    rgba(173, 216, 230, 0)
+  );
 }
