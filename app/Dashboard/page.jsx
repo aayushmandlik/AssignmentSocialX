@@ -29,7 +29,7 @@ const Dashboard = () => {
         </div>
       </div>
       <div className="flex justify-start">
-        <div className="h-[540px] p-5 bg-slate-100 justify-between w-72 border border-s-2">
+        <div className="h-[999px] p-5 bg-slate-100 justify-between w-72 border border-s-2">
           <div className="font-bold">Channels</div>
           <div className="text-[10px] ml-1 -mt-2 mb-3">3 Connected</div>
           <div className="relative p-0 border border-purple-500 rounded-[10px] bg-white">
